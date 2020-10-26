@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
@@ -14,40 +15,79 @@
 <body>
     
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">Movie</a>
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Movie</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Drama</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Series</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                  <div class="my-2 my-lg-0">
-                    <form class="form-inline">
-                      <input type="search" placeholder="Search" aria-label="Search">
-                      <button class="search-btn"><i class="fas fa-search"></i></button>
-
-                      <!-- <a href="#" class="d-inline btn btn-primary btn-sm">Signup</a> -->
-                    </form>
-                    
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">Movie</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <!-- Movies -->
+              <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link" href="#" data-toggle="dropdown">Movies</a>
+                <div class="dropdown-menu megamenu">
+                  <div class="row justify-content-center">
+                      <div class="col-md-3">
+                        <h6>Popular English Movies</h6>
+                        <ul>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h6>Popular English Movies</h6>
+                        <ul>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h6>Popular English Movies</h6>
+                        <ul>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                          <li><i class="fa fa-circle"></i><a href="#">Movie 1</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        
+                      </div>
                   </div>
-              </nav>
-        </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="my-2 my-lg-0">
+              <form class="form-inline">
+                <input type="search" placeholder="Search" aria-label="Search">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+
+                <!-- <a href="#" class="d-inline btn btn-primary btn-sm">Signup</a> -->
+              </form>
+              
+            </div>
+        </nav>
     </header>
     <section id="home">
         <div id="carouselIndicator" class="carousel slide" data-ride="carousel">
@@ -88,7 +128,7 @@
 
     <section id="movie">
        <div class="container">
-        <h1 class="text-center text-uppercase mb-5">Movies</h1>
+        <h2 class="text-center text-uppercase mb-5 heading-text">Movies</h2>
          <div class="row">
           <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -781,7 +821,7 @@
 
     <section id="drama">
       <div class="container">
-        <h1 class="text-center text-uppercase mb-5">Drama</h1>
+        <h2 class="text-center text-uppercase mb-5 heading-text">Drama</h2>
         <div class="row">
          <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
            <li class="nav-item">
@@ -1192,7 +1232,7 @@
     </section>
 
     <section id="carousel">
-      <h2 class="text-center text-uppercase mb-5">Top Collections</h2>
+      <h2 class="text-center text-uppercase mb-5 heading-text">Top Collections</h2>
       <div class="owl-carousel">
         <div class="card">
           <div class="card-image">
@@ -1500,7 +1540,7 @@
 
     <section id="series">
       <div class="container">
-        <h1 class="text-center text-uppercase mb-5">Series</h1>
+        <h2 class="text-center text-uppercase mb-5 heading-text">Series</h2>
         <div class="row">
          <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
            <li class="nav-item">
