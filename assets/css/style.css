@@ -21,8 +21,19 @@ header {
     background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
 }
 
+
 .navbar-dark {
     color: var(--primaryTextColor);
+}
+
+.navbar .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar .nav-item {
+    text-transform: uppercase;
+    padding: .7rem .6rem;
 }
 
 .navbar input[type="search"],
@@ -32,10 +43,10 @@ header {
     border: none;
     outline: none;
     width: 300px;
-    border-radius: 3px;
-    font-size: .8rem;
-    height: 30px;
-    padding: 1rem;
+    border-radius: 8px;
+    font-size: 18px;
+    height: auto;
+    padding: .5rem 1rem;
     color: var(--primaryBlue);
     font-family: 'Roboto', sans-serif;
 }
@@ -43,11 +54,14 @@ header {
 .navbar .search-btn {
     border: none;
     outline: none;
-    margin-left: -2rem;
-    height: 32px;
-    background-color: transparent;
-    width: 32px;
-    color: var(--primaryBlue);
+    margin-left: -3rem;
+    height: auto;
+    font-size: 18px;    
+    background-color: #000;
+    padding: .5rem 1rem;
+    width: auto;
+    color: var(--primaryTextColor);
+    border-radius: 0 8px 8px 0;
 }
 
 .navbar .has-megamenu {
@@ -144,12 +158,12 @@ header {
  }  
 
 #home {
-    max-height: 96vh;
+    max-height: 90vh;
 }
 
 #home .carousel-image {
     width: 100wh;
-    height: 91vh;
+    height: 89vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
