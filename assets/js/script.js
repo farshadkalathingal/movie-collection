@@ -1,14 +1,24 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.bxslider').bxSlider({
+        minSlides: 5,
+		maxSlides: 10,
+        slideWidth: 257,
+		slideMargin: 17,
+		ticker: true,
+		tickerHover: true,
+		speed: 20000,
+		useCSS: false, 
+		infiniteLoop: false
+      });
+
+      $('#featured .owl-carousel').owlCarousel({
         center: true,
-        items:5,
+        items:3,
         loop:true,
         margin:10,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-        autoplaySpeed: 5000,
-    })
+        nav:true,
+        navText:["<i class='fas fa-chevron-left'></i>" , "<i class='fas fa-chevron-right'></i>"]
+    });
 
     $('#year').text(new Date().getFullYear());
 
