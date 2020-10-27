@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <header>
+    <header id="header">
       <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#">Movie</a>
             <ul class="navbar-nav mr-auto">
@@ -91,6 +91,11 @@
             </div>
         </nav>
     </header>
+
+    <a href="#header" id="float-btn" title="Go to top">
+      <i class='fas fa-chevron-up'></i>
+    </a>
+
     <section id="home">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -2787,7 +2792,9 @@
         <div class="row copy">
           <div class="col-md-6">
             <div>
-                <p>Copyright <span id="year"></span> <a href="#">Movies</a>. <br>
+                <p>Copyright <script>
+                  document.write(new Date().getFullYear());
+                </script> <a href="#"> Movies</a>. <br>
                 Designed by <a href="#">Farshad Kalathingal</a>.</p>
             </div>
           </div>
@@ -2809,6 +2816,7 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.bxslider.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
     <script src="assets/js/script.js"></script>
     
 </body> 
