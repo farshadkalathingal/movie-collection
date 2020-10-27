@@ -49,8 +49,8 @@ var Window_Scroll = function() {
 
   /** Smooth Scroll */
 var Smooth_Scroll = function() {
-	var scroll = new SmoothScroll('a[href*="#"]', {
-		speed: 500,
+	var scroll = new SmoothScroll('a[href="#header"]', {
+		speed: 1000,
 		speedAsDuration: true
 	  });
 };
