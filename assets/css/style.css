@@ -722,6 +722,13 @@ header {
 #news-letter {
     background: var(--primaryBlue);
     color: var(--primaryTextColor);
+    padding: 5rem 0;
+}
+
+#news-letter .form {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #news-letter form input[type="email"] {
@@ -781,7 +788,9 @@ footer h3::after {
     width: 50px;
     border-top: 4px solid var(--lihtBlue);
 }
-
+footer hr {
+    border-top: solid 1px var(--primaryBackgroundColor);
+}
 footer ul {
     list-style: none;
     padding-inline-start: 0;
@@ -821,6 +830,10 @@ footer p a{
 footer p a:hover {
     color: var(--primaryTextColor);
     text-decoration: none;
+}
+
+footer .fooer-social-icons {
+    text-align: right;
 }
 
 .social-icons {
@@ -879,12 +892,21 @@ footer p a:hover {
         height: 35vh;
      }
 
-     #movie, #drama, #series, #featured, #carousel {
+    .swiper-button-next, .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 15px;
+    }
+
+    #movie, #drama, #series, #featured, #carousel, #news-letter {
          padding: 2rem 0;
          margin: 0;
-     }
+    }
 
-     .nav-pills .nav-link {
+    .nav-pills .nav-link {
         padding: .7rem .5rem;
     }
 
@@ -914,6 +936,19 @@ footer p a:hover {
     #drama .big-card .content .user-rating, #drama .big-card .content ul,
     #series .big-card .content .user-rating, #series .big-card .content ul {
        display: none;
+    }
+
+    #news-letter form input[type="email"] {
+        width: auto;
+    }
+
+    #news-letter .form {
+        margin-top: 2rem;
+        width: fit-content;
+    }
+
+    .copy, footer .fooer-social-icons {
+        text-align: center !important;
     }
     
 }
