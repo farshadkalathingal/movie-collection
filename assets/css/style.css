@@ -359,6 +359,10 @@ header {
     background-color: #190061;
 }
 
+.tab-content {
+    width: 100%;
+}
+
 /* Card */
 
 .card-image {
@@ -842,3 +846,74 @@ footer p a:hover {
     border-color: var(--lihtBlue);
 }
 
+@media screen and (max-width:786px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar .navbar-brand {
+        text-transform: capitalize;
+    }
+    .navbar .nav-item {
+        text-transform: capitalize;
+        padding: 0 .2rem;
+    }
+    .nav-form {
+        display: none;
+    }
+    .navbar .megamenu {
+        left:0; 
+        right:0; 
+        width:100%; 
+        padding:20px;
+        position: absolute;
+    }
+    #home {
+        min-height: auto;
+    }
+    .swiper-container {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+     }
+    .swiper-slide {
+        height: 35vh;
+     }
+
+     #movie, #drama, #series, #featured, #carousel {
+         padding: 2rem 0;
+         margin: 0;
+     }
+
+     .nav-pills .nav-link {
+        padding: .7rem .5rem;
+    }
+
+    #featured .owl-nav .owl-prev {
+        left: -10px;
+    }
+    
+    #featured .owl-nav .owl-next {
+        right: -10px;
+    }
+    #movie .card, #drama .card, #series .card {
+        margin: .5rem 0;
+    }
+    .card-image {
+        height: 300px;
+    }
+
+    #movie .big-card,  #drama .big-card,  #series .big-card {
+        height: 375px;
+    }
+    
+    #movie .big-card .content, #drama .big-card .content, #series .big-card .content {
+        margin-top: 15rem;
+    }
+    
+    #movie .big-card .content .user-rating, #movie .big-card .content ul,
+    #drama .big-card .content .user-rating, #drama .big-card .content ul,
+    #series .big-card .content .user-rating, #series .big-card .content ul {
+       display: none;
+    }
+    
+}
