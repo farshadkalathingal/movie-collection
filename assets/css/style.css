@@ -111,6 +111,90 @@ header {
 .navbar .megamenu ul li a:hover {
     color: var(--Blue);
 }
+
+.navbar .sidebar-menu {
+    width: 80%;
+    height: calc(100vh - 3.5rem);
+    position: absolute;
+    background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
+    bottom: 0;
+    left: auto;
+    right: -80%;
+    top: 3.5rem;
+    z-index: 99;
+    padding-left: 2rem;
+    transition: .5s;
+}
+
+.navbar .sidebar-menu ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.navbar .sidebar-menu ul li {
+    margin: 1rem 0;
+}
+
+.navbar .sidebar-menu ul li a {
+    color: var(--primaryTextColor);
+    font-size: 19px;
+    padding-top: .5px;
+}
+
+.navbar .sidebar-menu ul li .active::after {
+    width: 70px;
+    height: 3px;
+    background-color: var(--secondaryTextColor);
+    content: '';
+    position: absolute;
+    left: 2rem;
+    transform: translateY(30px);
+}
+
+.navbar .sidebar-menu ul li a:hover,
+.navbar .sidebar-menu ul li a:active,
+.navbar .sidebar-menu ul li a:focus {
+    text-decoration: none;
+}
+.navbar .sidebar-menu ul li .fa-circle {
+    font-size: 8px;
+    color: var(--secondaryTextColor);
+    margin-right: .5rem;
+}
+
+.navbar .sidebar-menu .dropdown-container {
+    display: none;
+    background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
+}
+
+.navbar .toggle-btn {
+    display: none;
+}
+
+.navbar .toggle-btn .tg-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--primaryTextColor);
+    font-size: 18px;
+    right: 0;
+}
+
+#header .big-card {
+    width: 99%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+#header .big-card .content {
+    color: var(--primaryTextColor);
+    text-align: center;
+    padding: 3rem;
+    margin-top: 9rem;
+    text-transform: uppercase;
+}
+
 /* default styles */
 
 .btn-color {
@@ -888,26 +972,25 @@ footer .fooer-social-icons {
     border-color: var(--lihtBlue);
 }
 
+.sidebar-show {
+    right: 0 !important;
+}
+
 @media screen and (max-width:786px) {
     .navbar-nav {
-        flex-direction: row;
-    }
-    .navbar .navbar-brand {
-        text-transform: capitalize;
-    }
-    .navbar .nav-item {
-        text-transform: capitalize;
-        padding: 0 .2rem;
+        display: none;
     }
     .nav-form {
         display: none;
     }
-    .navbar .megamenu {
-        left:0; 
-        right:0; 
-        width:100%; 
-        padding:20px;
-        position: absolute;
+    .navbar .toggle-btn {
+        display: block;
+    }
+    .navbar input[type="search"],
+    .navbar input[type="search"]:focus,
+    .navbar input[type="search"]:hover,
+    .navbar input[type="search"]:active {
+        width: auto;
     }
     #home {
         min-height: auto;

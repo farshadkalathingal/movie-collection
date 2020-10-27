@@ -91,6 +91,17 @@ var Owl_Carousel = function() {
         }
     });
 
+    $('#header .movies .owl-carousel').owlCarousel({
+        center: true,
+        items:1,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:2500,
+        autoplayHoverPause:true,
+        autoplaySpeed: 1000,
+    });
+
     $('#movie .owl-carousel').owlCarousel({
         center: true,
         items:1,
@@ -124,3 +135,28 @@ var Owl_Carousel = function() {
         autoplaySpeed: 1000,
     });
 };
+
+
+$('.tg-btn').click(function() {
+    $('.sidebar-menu').toggleClass('sidebar-show');
+});
+
+$('section').click(function() {
+    $('.sidebar-menu').toggleClass('sidebar-show');
+});
+
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
