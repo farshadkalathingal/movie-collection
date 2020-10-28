@@ -113,17 +113,15 @@ header {
 }
 
 .navbar .sidebar-menu {
-    width: 80%;
-    height: calc(100vh - 3.5rem);
-    position: absolute;
-    background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
+    position: fixed;
     bottom: 0;
-    left: auto;
-    right: -80%;
-    top: 3.5rem;
-    z-index: 99;
-    padding-left: 2rem;
+    right: -100%;
+    width: 80%;
+    height: calc( 100vh - 3.5rem);
+    padding: 3rem;
+    background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
     transition: .5s;
+    z-index: 99;
 }
 
 .navbar .sidebar-menu ul {
@@ -718,7 +716,7 @@ header {
 #featured .owl-nav .owl-prev {
     margin: 0;
     padding: 0;
-    left: -75px;
+    left: -25px;
     font-size: 26px;
     top: 50%;
     color: #ffffff;
@@ -740,7 +738,7 @@ header {
 
 #featured .owl-nav .owl-next {
     font-size: 26px;
-    right: -75px;
+    right: -25px;
     top: 49.5%;
     position: absolute;
     color: #ffffff;
@@ -839,7 +837,7 @@ header {
 }
 
 #news-letter .form {
-    width: max-content;
+    width: calc(100% - 3rem);
     margin-left: auto;
     margin-right: auto;
 }
@@ -850,7 +848,7 @@ header {
     font-size: 15px;
     padding: .8rem .7rem;
     border-radius: 5px 0 0 5px;
-    width: 400px;
+    width: calc(100% - 7rem);
     border: 1px solid rgb(177, 177, 177);
 }
 
@@ -990,7 +988,7 @@ footer .fooer-social-icons {
     .navbar input[type="search"]:focus,
     .navbar input[type="search"]:hover,
     .navbar input[type="search"]:active {
-        width: auto;
+        width: calc( 100% - 2rem) !important;
     }
     #home {
         min-height: auto;
@@ -1064,3 +1062,50 @@ footer .fooer-social-icons {
     }
     
 }
+
+@media screen and (max-width:1024px) {
+    .navbar-nav {
+        display: none;
+    }
+    .nav-form {
+        display: none;
+    }
+    .navbar .toggle-btn {
+        display: block;
+    }
+    .navbar input[type="search"],
+    .navbar input[type="search"]:focus,
+    .navbar input[type="search"]:hover,
+    .navbar input[type="search"]:active {
+        width: calc( 100% - 2rem) !important;
+    }
+
+    .navbar .sidebar-menu {
+        width: 50%;
+    }
+
+    #home {
+        min-height: auto;
+    }
+    .swiper-container {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+     }
+
+    .swiper-slide {
+        height: 60vh;
+     }
+
+     #movie .card, #drama .card, #series .card {
+        margin: .5rem 0;
+    }
+
+    #featured .owl-nav .owl-prev {
+        left: -10px;
+    }
+    
+    #featured .owl-nav .owl-next {
+        right: -10px;
+    }
+ }

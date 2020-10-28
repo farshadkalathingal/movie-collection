@@ -74,7 +74,6 @@ var bxSlider = function() {
 
 var Owl_Carousel = function() {
     $('#featured .owl-carousel').owlCarousel({
-        center: true,
         loop:true,
         margin:10,
         navText:["<i class='fas fa-chevron-left'></i>" , "<i class='fas fa-chevron-right'></i>"],
@@ -82,11 +81,17 @@ var Owl_Carousel = function() {
         responsive:{
             0:{
                 items:1,
-                nav:true
+                nav:true,
+                centre: true
             },
             600:{
-                items:3,
+                items:2,
                 nav:true
+            },
+            1000:{
+                items:3,
+                nav:true,
+                centre: true
             }
         }
     });
@@ -142,7 +147,7 @@ $('.tg-btn').click(function() {
 });
 
 $('section').click(function() {
-    $('.sidebar-menu').toggleClass('sidebar-show');
+    $('.sidebar-menu').removeClass('sidebar-show');
 });
 
 
